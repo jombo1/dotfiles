@@ -1,0 +1,36 @@
+[global_config]
+  borderless = True
+  suppress_multiple_term_dialog = True
+  title_font = Bok MonteCarlo Medium 8
+  title_inactive_bg_color = "#737475"
+  title_inactive_fg_color = "#b7b8b9"
+  title_transmit_bg_color = "#0c0d0e"
+  title_transmit_fg_color = "#b7b8b9"
+  title_use_system_font = False
+[keybindings]
+  line_down = <Shift>Down
+  line_up = <Shift>Up
+  page_down_half = <Shift>Page_Down
+  page_up_half = <Shift>Page_Up
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.89
+    background_type = transparent
+    cursor_color = "#bd0c76"
+    cursor_color_fg = False
+    font = xos4 Terminess Powerline 10
+    foreground_color = "#ffffff"
+    palette = "#393939:#da4939:#519f50:#cc7833:#6d9cbe:#9f5079:#435d75:#dddddd:#474747:#ff6c5c:#a5c261:#bc9458:#d0d0ff:#a761c2:#6e98a4:#dddddd"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
