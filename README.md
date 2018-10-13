@@ -1,2 +1,2 @@
 # dotfiles
-Configs for my arch
+Configs for my arch, my guy.
