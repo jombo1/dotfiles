@@ -118,4 +118,4 @@ alias xdef="vim ~/.Xdefaults"
 alias eclim="~/.eclipse/org.eclipse.platform_4.8.0_155965261_linux_gtk_x86_64/eclimd"
 alias lsla="ls -la"
 alias lsa="ls -a"
-
+alias gita="git add -A"
