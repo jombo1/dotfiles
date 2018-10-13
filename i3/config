@@ -11,7 +11,6 @@ font pango:artwiz glisp.se Regular 8
 
 # TODO:
 # keybinds, start common programs                                  
-# screen brightness                         
 # resize function                     
 # Designated workspacees for different programs
 # switch between keyboard layouts
@@ -57,9 +56,9 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% 
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
-# Sreen brightness controls
-bindsym $mod+F9 exec xbacklight -inc 20
-bindsym $mod+F8 exec xbacklight -dec 20
+# Screen brightness controls
+bindsym XF86MonBrightnessUp exec light -A 10 #increase
+bindsym XF86MonBrightnessDown exec light -U 10 #decrease
 
 # Screenshot
 bindsym Print exec --no-startup-id deepin-screenshot
