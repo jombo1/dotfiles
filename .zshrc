@@ -10,6 +10,13 @@
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="mortalscumbag"
 
+# Welcome Message
+# echo "Welcome ${USER}"
+
+#cat << "EOF"
+# Put ascii here
+#EOF
+
 # Add Powerline
 #powerline-daemon -q
 #. /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
@@ -69,6 +76,7 @@ ZSH_THEME="mortalscumbag"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  history
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,10 +105,10 @@ export LANG=en_US.UTF-8
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias zshconf="vim ~/.zshrc"
-alias vimconf="vim ~/.vimrc"
+
+# Aliases
+alias zshrc="vim ~/.zshrc"
+alias vimrc="vim ~/.vimrc"
 alias i3conf="vim ~/.i3/config"
 alias termconf="vim ~/.config/terminator/config "
 alias pacc="sudo pacman -S "
@@ -108,4 +116,6 @@ alias paccsyu="sudo pacman -Syu "
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias xdef="vim ~/.Xdefaults"
 alias eclim="~/.eclipse/org.eclipse.platform_4.8.0_155965261_linux_gtk_x86_64/eclimd"
+alias lsla="ls -la"
+alias lsa="ls -a"
 
