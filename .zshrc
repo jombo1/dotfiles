@@ -106,6 +106,11 @@ export LANG=en_US.UTF-8
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+# History settings
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=$HISTSIZE
+
 # Aliases
 alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
@@ -118,4 +123,5 @@ alias xdef="vim ~/.Xdefaults"
 alias eclim="~/.eclipse/org.eclipse.platform_4.8.0_155965261_linux_gtk_x86_64/eclimd"
 alias lsla="ls -la"
 alias lsa="ls -a"
+alias nmreset="systemctl restart NetworkManager"
 alias gita="git add -A"
