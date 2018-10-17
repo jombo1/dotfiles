@@ -13,7 +13,7 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 " Airline stuff
-let g:airline_theme='simple'
+let g:airline_theme='base16_monokai'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
@@ -34,6 +34,9 @@ set wildmenu            " menu that shows folders while typing
 set noshowmode          " disable showing modes since airline already shows it
 set clipboard=unnamedplus " make + the default register
 let mapleader = ","
+
+"set color of folds
+highlight Folded ctermbg=black
 
 " Converts all tabs into 4 spaces
 set tabstop=4
