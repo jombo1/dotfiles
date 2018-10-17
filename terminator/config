@@ -2,10 +2,10 @@
   borderless = True
   suppress_multiple_term_dialog = True
   title_font = Bok MonteCarlo Medium 8
-  title_inactive_bg_color = "#737475"
-  title_inactive_fg_color = "#b7b8b9"
-  title_transmit_bg_color = "#0c0d0e"
-  title_transmit_fg_color = "#b7b8b9"
+  title_inactive_bg_color = "#76715e"
+  title_inactive_fg_color = "#f1ebeb"
+  title_transmit_bg_color = "#48483e"
+  title_transmit_fg_color = "#f1ebeb"
   title_use_system_font = False
 [keybindings]
   line_down = <Shift>Down
@@ -24,13 +24,14 @@
 [plugins]
 [profiles]
   [[default]]
-    background_darkness = 0.89
+    background_color = "#272822"
+    background_darkness = 1.0
     background_type = transparent
     cursor_color = "#bd0c76"
     cursor_color_fg = False
-    font = xos4 Terminess Powerline 12
-    foreground_color = "#ffffff"
-    palette = "#2e3436:#a31604:#447241:#c1951a:#425387:#965d98:#06989a:#d3d7cf:#555753:#c60001:#27a343:#d5a30e:#4a5a8d:#893c8c:#12bccb:#eeeeec"
+    font = artwiz smoothansi 8
+    foreground_color = "#f1ebeb"
+    palette = "#48483e:#dc2566:#8fc029:#d4c96e:#55bcce:#9358fe:#56b7a5:#acada1:#76715e:#fa2772:#a7e22e:#e7db75:#66d9ee:#ae82ff:#66efd5:#cfd0c2"
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
