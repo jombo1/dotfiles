@@ -112,10 +112,10 @@ HISTSIZE=10000
 SAVEHIST=$HISTSIZE
 
 # Aliases
-alias zshrc="vim ~/.zshrc"
-alias vimrc="vim ~/.vimrc"
-alias i3conf="vim ~/.i3/config"
-alias termconf="vim ~/.config/terminator/config "
+alias zshrc="vim ~/dotfiles/.zshrc"
+alias vimrc="vim ~/dotfiles/.vimrc"
+alias i3conf="vim ~/dotfiles/i3/config"
+alias termconf="vim ~/dotfiles/terminator/config "
 alias pacc="sudo pacman -S "
 alias paccsyu="sudo pacman -Syu "
 alias ohmyzsh="vim ~/.oh-my-zsh"
