@@ -8,7 +8,8 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="mortalscumbag"
+ZSH_THEME="agnoster"
+#ZSH_THEME="mortalscumbag"
 
 # Welcome Message
 # echo "Welcome ${USER}"
@@ -16,6 +17,12 @@ ZSH_THEME="mortalscumbag"
 #cat << "EOF"
 # Put ascii here
 #EOF
+
+# Begin tmux every shell login
+#case $- in *i*)
+    #[ -z "$TMUX" ] && exec tmux
+#esac
+
 
 # Add Powerline
 #powerline-daemon -q
@@ -114,8 +121,10 @@ SAVEHIST=$HISTSIZE
 # Aliases
 alias zshrc="vim ~/dotfiles/.zshrc"
 alias vimrc="vim ~/dotfiles/.vimrc"
-alias i3conf="vim ~/dotfiles/i3/config"
-alias termconf="vim ~/dotfiles/terminator/config "
+alias i3conf="vim ~/.i3/config"
+alias termconf="vim ~/.config/terminator/config "
+alias tmuxconf="vim ~/.tmux.conf"
+alias vim-airline="cd /usr/share/vim/vimfiles/autoload/airline"
 alias pacc="sudo pacman -S "
 alias paccsyu="sudo pacman -Syu "
 alias ohmyzsh="vim ~/.oh-my-zsh"
