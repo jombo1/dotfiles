@@ -4,9 +4,9 @@
 
 # i3 main font 
 # is used in the bar {} block below.
-#font pango:xos4 Terminess Powerline Regular 8
+font pango:xos4 Terminess Powerline Regular 8
 #font pango:DejaVu Sans Mono 8
-font pango:artwiz glisp.se Regular 8
+#font pango:artwiz glisp.se Regular 8
 
 
 # TODO:
@@ -45,9 +45,9 @@ set $term --no-startup-id $TERMINAL
 set $mod Mod4
 
 # i3 gaps
-gaps inner 10
-bindsym $mod+g			gaps inner current plus 5
-bindsym $mod+Shift+g    gaps inner current minus 5
+gaps inner 8
+bindsym $mod+g			gaps inner current plus 4
+bindsym $mod+Shift+g    gaps inner current minus 4
 
 # Set bg
 exec --no-startup-id feh --bg-scale /home/branbran/Pictures/trees.jpg
@@ -238,8 +238,9 @@ bindsym $mod+r mode "resize"
 # Start bumblebee-status bar
 bar {
     position top
-    font pango:xos4 Terminess Powerline Regular 8
-    status_command ~/.config/bumblebee-status/bumblebee-status -m disk memory cpu uptime nic layout pasink battery date time -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t greeny
+    #font pango:xos4 Terminess Powerline Regular 8
+    font pango:NotoSansDisplay Nerd Font SemiCondensed Medium 8
+    status_command ~/.config/bumblebee-status/bumblebee-status -m disk memory cpu uptime nic ping layout pasink date time battery pacman -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t greeny
     tray_output none
     colors {
         separator $cn
