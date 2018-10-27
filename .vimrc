@@ -16,6 +16,11 @@ execute pathogen#helptags()
 let g:airline_theme='base16_monokai'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+set ttimeoutlen=0             "get rid of delay between modes 
+" testing rounded separators (extra-powerline-symbols):
+let g:airline_left_sep = "\uE0BC"
+let g:airline_right_sep = "\uE0BE"
+
 
 " For ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -26,7 +31,7 @@ set autoread            " rereads file if changed by outside program
 syntax on               " always turn on syntax
 filetype plugin indent on
 set encoding=utf-8
-set cursorline
+"set cursorline
 set number              " set line number
 "set relativenumber	    " shows relative line number
 set autoindent          " matched indent when starting new line
