@@ -8,8 +8,40 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="bullet-train"
 #ZSH_THEME="mortalscumbag"
+
+  BULLETTRAIN_PROMPT_ORDER=(
+    status
+    custom
+    context
+    dir
+    screen
+    perl
+    ruby
+    virtualenv
+    nvm
+    aws
+    go
+    rust
+    elixir
+    git
+    hg
+    cmd_exec_time
+  )
+
+# Refer to 256 colors for xterm as reference.
+BULLETTRAIN_DIR_BG=white
+BULLETTRAIN_DIR_FG=234
+BULLETTRAIN_GIT_BG=15
+BULLETTRAIN_STATUS_FG=15
+BULLETTRAIN_PROMPT_CHAR="\uf061"
+BULLETTRAIN_PROMPT_ADD_NEWLINE=false
+BULLETTRAIN_PROMPT_SEPARATE_LINE=true
+BULLETTRAIN_EXEC_TIME_BG=yellow
+
+# sudo powerline
+export SUDO_PROMPT="$(tput setaf 4) sudo $(tput setab 4)$(tput setaf 0)$(echo "\uE0B0")$(tput setab 4)$(tput setaf 0) password for %p $(tput sgr0)$(tput setaf 4)$(echo "\uE0B0")$(tput sgr0) " 
 
 # Welcome Message
 # echo "Welcome ${USER}"
