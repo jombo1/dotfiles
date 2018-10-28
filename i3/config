@@ -91,7 +91,7 @@ bindsym $mod+Shift+q kill
 bindsym Mod1+F4 kill
 
 # start dmenu with custom font and colors
-bindsym $mod+d exec dmenu_run -fn inconsolata-10:normal -nb '#161821' -sf '#161821' -sb '#5a725c' -nf '#5a725c'
+bindsym $mod+d exec dmenu_run -fn Inconsolata-12:normal -nb '#161821' -sf '#161821' -sb '#5a725c' -nf '#5a725c'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
