@@ -29,11 +29,11 @@
 [profiles]
   [[default]]
     background_color = "#272822"
-    background_darkness = 1.0
+    background_darkness = 0.89
     background_type = transparent
     cursor_color = "#bd0c76"
     cursor_color_fg = False
-    font = artwiz smoothansi.se 8
+    font = artwiz smoothansi 8
     foreground_color = "#f1ebeb"
     palette = "#48483e:#dc2566:#8fc029:#d4c96e:#5589ce:#9358fe:#56b7a5:#acada1:#76715e:#fa2772:#a7e22e:#e7db75:#66a1ee:#ae82ff:#66efd5:#cfd0c2"
     scrollbar_position = hidden

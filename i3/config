@@ -45,12 +45,13 @@ set $term --no-startup-id $TERMINAL
 set $mod Mod4
 
 # i3 gaps
-gaps inner 8
+gaps outer 8
+gaps inner 0
 bindsym $mod+g			gaps inner current plus 4
 bindsym $mod+Shift+g    gaps inner current minus 4
 
 # Set bg
-exec --no-startup-id feh --bg-scale /home/branbran/Pictures/trees.jpg
+exec --no-startup-id feh --bg-scale --no-fehbg ${HOME}/Pictures/trees.jpg
 
 # Sound Control
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% 
@@ -239,7 +240,7 @@ bindsym $mod+r mode "resize"
 bar {
     position top
     font pango:NotoSans Nerd Font Condensed Medium 8
-    status_command ~/.config/bumblebee-status/bumblebee-status -m disk memory cpu uptime nic ping layout pasink date time battery pacman -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t greeny
+    status_command ~/.config/bumblebee-status/bumblebee-status -m battery disk memory cpu uptime nic ping layout pasink date time pacman -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t powerline
     tray_output none
     colors {
         separator $cn

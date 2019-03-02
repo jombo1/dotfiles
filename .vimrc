@@ -5,6 +5,10 @@
 " https://dougblack.io/words/a-good-vimrc.html
 " https://github.com/amix/vimrc/tree/master/vimrcs
 
+" Extra notes for learning:
+" !wqa          write quit all
+" zR zM         open and close all folds
+
 " Load tmux in 256 colors
 set term=screen-256color
 
@@ -38,7 +42,14 @@ set autoindent          " matched indent when starting new line
 set wildmenu            " menu that shows folders while typing
 set noshowmode          " disable showing modes since airline already shows it
 set clipboard=unnamedplus " make + the default register
-let mapleader = ","
+let mapleader = ","     " makes comma the leader
+
+" open new split planes on right and bottom
+set splitbelow
+set splitright
+
+
+"User configuration
 
 "set color of folds
 highlight Folded ctermbg=black
@@ -77,6 +88,7 @@ map <C-Right> <C-W><Right>
 " Vertical split into .vimrc for editing
 nnoremap <leader>ev :sp $MYVIMRC<CR>
 nnoremap <leader>ez :sp ~/.zshrc<CR>
+nnoremap <leader>ei :sp ~/dotfiles/i3/config<CR>
 
 " Quick saving and exiting
 nmap <leader>w :w!<cr>

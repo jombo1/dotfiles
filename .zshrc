@@ -35,7 +35,7 @@ BULLETTRAIN_DIR_BG=white
 BULLETTRAIN_DIR_FG=234
 BULLETTRAIN_GIT_BG=15
 BULLETTRAIN_STATUS_FG=15
-BULLETTRAIN_PROMPT_CHAR="\uf061"
+BULLETTRAIN_PROMPT_CHAR="\uf0f4"
 BULLETTRAIN_PROMPT_ADD_NEWLINE=false
 BULLETTRAIN_PROMPT_SEPARATE_LINE=true
 BULLETTRAIN_EXEC_TIME_BG=yellow
@@ -116,6 +116,7 @@ export SUDO_PROMPT="$(tput setaf 4) sudo $(tput setab 4)$(tput setaf 0)$(echo "\
 plugins=(
   git
   history
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -147,13 +148,22 @@ export LANG=en_US.UTF-8
 
 # History settings
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
+HISTSIZE=100000
 SAVEHIST=$HISTSIZE
+setopt    EXTENDED_HISTORY
+
+# Histroy deduplication
+setopt    HIST_IGNORE_ALL_DUPS
+setopt    HIST_IGNORE_DUPS
+setopt    HIST_IGNORE_SPACE
+setopt    HIST_NO_STORE
+setopt    HIST_REDUCE_BLANKS
+setopt    HIST_VERIFY
 
 # Aliases
 alias zshrc="vim ~/dotfiles/.zshrc"
 alias vimrc="vim ~/dotfiles/.vimrc"
-alias i3conf="vim ~/.i3/config"
+alias i3conf="vim ~/.config/i3/config"
 alias termconf="vim ~/.config/terminator/config "
 alias tmuxconf="vim ~/.tmux.conf"
 alias vim-airline="cd /usr/share/vim/vimfiles/autoload/airline"
