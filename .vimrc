@@ -12,9 +12,19 @@
 " Load tmux in 256 colors
 set term=screen-256color
 
-" Load pathogen
-execute pathogen#infect()
-execute pathogen#helptags()
+" Vundle Settings
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tmhedberg/matchit'
+Plugin 'mattn/emmet-vim'
+Plugin 'alvan/vim-closetag'
+Plugin 'gregsexton/MatchTag'
+Plugin 'airblade/vim-gitgutter'
+call vundle#end()
+
 
 " Airline stuff
 let g:airline_theme='base16_monokai'
@@ -43,6 +53,7 @@ set wildmenu            " menu that shows folders while typing
 set noshowmode          " disable showing modes since airline already shows it
 set clipboard=unnamedplus " make + the default register
 let mapleader = ","     " makes comma the leader
+set updatetime=100      " for gitgutter to update quickly
 
 " open new split planes on right and bottom
 set splitbelow
@@ -55,9 +66,9 @@ set splitright
 highlight Folded ctermbg=black
 
 " Converts all tabs into 4 spaces
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 set incsearch           " search as characters are entered
@@ -100,11 +111,12 @@ nmap <leader>q :q!<cr>
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " Useful mappings for managing tabs
-map <leader>tn :tabnew<cr>
+map <leader>tn :tabnew 
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 map <leader>tt :tabnext<cr>
+map <leader>ty :tabprev<cr>
 
 " Set word wrapping for text files
 autocmd BufRead,BufNewFile *.md,*.tex,*.txt set linebreak
